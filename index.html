@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Stage Frighters</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/logo.png">
+  <style>
+    .navbar {
+      border-bottom: 2px solid #8fefdc;
+      /* Adds a solid 2px border at the bottom of the navbar */
+    }
+
+    body {
+      background-color: #333;
+      /* Light grey background color */
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin: 20px;
+      margin-bottom: 5px;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fadeIn;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+    }
+
+    /* Keyframes for fading in */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* TOUR text style */
+    #p_size {
+      font-size: 250%;
+      border-top: 2px solid;
+      border-bottom: 2px solid;
+      padding: 0.5%;
+      margin-bottom: 0.0001%;
+      margin-top: 0.0001%;
+      text-align: center;
+      background: #333;
+    }
+
+    /* Carousel styles */
+    .carousel-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 20px;
+      padding: 10px;
+      position: relative;
+      background-color: #333;
+    }
+
+    /* Default carousel-text styles */
+    .carousel-text {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      background-color: #555;
+      text-align: center;
+      font-size: 1.2rem;
+      display: inline-block;
+      min-height: 150px;
+      line-height: 1.5;
+      font-family: "Lacquer", system-ui;
+    }
+
+    /* For smaller screens, make carousel-text smaller */
+    @media (max-width: 1200px) {
+      .carousel-text {
+        width: 250px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .carousel-text {
+        width: 200px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .carousel-text {
+        width: 180px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .carousel-text {
+        width: 150px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .carousel-text {
+        width: 130px;
+      }
+    }
+
+    .carousel-container img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .button-color {
+      background-color: #444;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Stage Fright Logo" />
+    </a>
+    <!-- Animated Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tour.html">Tour</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="credits.html">Credits</a></li>
+    </ul>
+  </nav>
+
+  <!-- Slideshow Section -->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/ad1.png" style="width:100%; border-radius: 2%;">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/ad2.png" style="width:100%; border-radius: 2%;">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/ad3.png" style="width:100%; border-radius: 2%;">
+    </div>
+  </div>
+  <br>
+
+  <!-- TOUR Text -->
+  <p id="p_size">TOUR</p>
+
+  <div class="carousel-container">
+    <button class="button-color"><a href="tour-item.html?id=1">
+        <p class="carousel-text">Shadow Spotlight: Join us for an unforgettable night of music and performance.
+          (FEBRUARY 4, 2025 - Texas, Houston)</p>
+      </a></button>
+    <button class="button-color"><a href="tour-item.html?id=2">
+        <p class="carousel-text">Mic Drop Phobia: Experience the fear and thrill of the mic drop. (MARCH 12, 2025 -
+          California, Los Angeles)</p>
+      </a></button>
+    <button class="button-color"><a href="tour-item.html?id=3">
+        <p class="carousel-text">Fearless In The Limelight: A bold performance that pushes boundaries. (APRIL 24, 2025 -
+          Florida, Orlando)</p>
+      </a></button>
+    <button class="button-color"><a href="tour-item.html?id=4">
+        <p class="carousel-text">Electric Pulse: Feel the energy with every beat. (MAY 6, 2025 - Illinois, Chicago)</p>
+      </a></button>
+    <button class="button-color"><a href="tour-item.html?id=5">
+        <p class="carousel-text">Strings Of Fate: A night of melodic strings and harmonious tunes. (MAY 27, 2025 -
+          Colorado, Denver)</p>
+      </a></button>
+    <button class="button-color"><a href="tour-item.html?id=6">
+        <p class="carousel-text">Break The Silence: A powerful performance that will leave you speechless. (JUNE 16,
+          2025 - Washington, Seattle)</p>
+      </a></button>
+    <button class="button-color"><a href="tour-item.html?id=7">
+        <p class="carousel-text">Fright Or Flight: An adrenaline-pumping show you can't miss. (JULY 3, 2025 - New York,
+          New York City)</p>
+      </a></button>
+    <button class="button-color"><a href="tour-item.html?id=8">
+        <p class="carousel-text">Amplified Chaos: Embrace the chaos and let the music take over. (JULY 22, 2025 - Ohio,
+          Columbus)</p>
+      </a></button>
+    <button class="button-color"><a href="tour-item.html?id=9">
+        <p class="carousel-text">Trembling Chords: A soulful performance in the heart of jazz country. (AUGUST 15, 2025
+          - Louisiana, New Orleans)</p>
+      </a></button>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script>
+    let slideIndex = 1; // Start at the first slide
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+
+      // Hide all slides and reset animations
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        slides[i].classList.remove("fade");
+      }
+
+      // Increment the slide index and loop back if necessary
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      // Display the current slide and apply fade-in animation
+      slides[slideIndex - 1].style.display = "block";
+      slides[slideIndex - 1].classList.add("fade");
+
+      // Automatically switch to the next slide after 5 seconds
+      setTimeout(showSlides, 5000);
+    }
+
+    // Start the slideshow
+    showSlides();
+  </script>
+</body>
+
+</html>

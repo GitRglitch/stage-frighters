@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Stage Frighters</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/logo.png">
+
+    <style>
+      #contactForm {
+        background-color: #333;
+        border-bottom: 2px solid #8fefdc;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Stage Fright Logo" />
+      </a>
+      <!-- Animated Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("mobile");
+      }
+    </script>
+
+    <main>
+      <section>
+        <h2 style="text-align: center">Contact Us</h2>
+        <p style="text-align: center">
+          We'd love to hear from you! Fill out the form below or reach us on
+          social media.
+        </p>
+
+        <!-- Form Section -->
+        <form
+          id="contactForm"
+          action="#"
+          method="post"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 3px solid #8fefdc;
+          "
+        >
+          <div>
+            <label
+              for="name"
+              style="font-family: 'Lacquer', system-ui; color: white"
+              >Name:</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+              style="
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #fff;
+                border-radius: 4px;
+                font-family: 'Lacquer', system-ui;
+                font-size: 16px;
+                box-sizing: border-box;
+              "
+            />
+          </div>
+
+          <div style="width: 100%; margin-bottom: 15px">
+            <label
+              for="email"
+              style="font-family: 'Lacquer', system-ui; color: white"
+              >Email:</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              style="
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #fff;
+                border-radius: 4px;
+                font-family: 'Lacquer', system-ui;
+                font-size: 16px;
+                box-sizing: border-box;
+              "
+            />
+          </div>
+
+          <div style="width: 100%; margin-bottom: 15px">
+            <label
+              for="message"
+              style="font-family: 'Lacquer', system-ui; color: white"
+              >Message:</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message..."
+              rows="5"
+              required
+              style="
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #fff;
+                border-radius: 4px;
+                font-family: 'Lacquer', system-ui;
+                font-size: 16px;
+                box-sizing: border-box;
+              "
+            ></textarea>
+          </div>
+
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              margin-top: 20px;
+            "
+          >
+            <button type="submit" class="ticket-button">Send Message</button>
+          </div>
+        </form>
+      </section>
+
+      <section style="text-align: center; margin-top: 40px">
+        <h3>Follow Us</h3>
+        <p>
+          <a href="#" style="color: #fff">Instagram</a> |
+          <a href="#" style="color: #fff">Twitter</a> |
+          <a href="#" style="color: #fff">YouTube</a>
+        </p>
+      </section>
+    </main>
+
+    <footer
+      style="
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+      "
+    >
+      <p>&copy; 2024 Stage Frighters. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

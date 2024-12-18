@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/logo.png">
+
+    <style>
+      /* Grid Container */
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        margin: 20px;
+        opacity: 0; /* Start hidden */
+        transform: translateY(20px); /* Start slightly below */
+        transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth fade and slide */
+      }
+
+      .container.show {
+        opacity: 1; /* Become visible */
+        transform: translateY(0); /* Move to original position */
+      }
+
+      .vertical {
+        grid-row: 1 / span 1;
+        border: 2px double #8fefdc;
+        border-width: 10px;
+        padding: 10px;
+        background-color: #444;
+      }
+
+      .vertical img {
+        width: 100%;
+        height: auto;
+      }
+
+      .horizontal {
+        border: 2px double #8fefdc;
+        border-width: 10px;
+        padding: 10px;
+        background-color: #444;
+        
+      }
+
+      .container h3,
+      .container p {
+        color: #8fefdc;
+        font-size: 200%;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+      }
+
+      /* Fade-in Animation */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px); /* Start below */
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0); /* Move to original position */
+        }
+      }
+
+      /* Responsive Styles for Phones */
+      @media (max-width: 767px) {
+        .container {
+          grid-template-columns: 1fr; /* Stack all elements vertically */
+        }
+
+        .vertical {
+          grid-row: auto;
+        }
+
+        .horizontal {
+          text-align: center; /* Center-align text */
+        }
+
+        .vertical img {
+          max-width: 100%; /* Ensure images resize within the container */
+        }
+
+        .container {
+          gap: 10px; /* Reduce spacing on smaller screens */
+          margin: 10px; /* Adjust margins for compact screens */
+        }
+      }
+
+      .font {
+        font-family: "Lacquer", system-ui;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Stage Fright Logo" />
+      </a>
+      <!-- Animated Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </ul>
+    </nav>
+
+    <section class="container">
+      <aside class="vertical">
+        <img src="images/Luna Knight (Viper).png" alt="Luna Knight" />
+      </aside>
+      <article class="horizontal">
+        <h2>Luna Knight</h2>
+        <p class="font">
+          Known as "Viper", is the fierce and rebellious guitarist of the band "Stage Frighters". Growing up in an industrial town, she discovered her passion for music with a broken guitar and turned her love for punk rock and metal into her identity. Nicknamed "Viper" for her sharp solos and striking energy, she founded "Stage Frighters", a band of misfits promoting individuality and self-expression. Their breakout hit "Noise Control" cemented their place in the underground scene. With her signature pink V-shaped guitar and unapologetic attitude, Luna inspires fans to "Be loud. Be bold. Be you."
+        </p>
+      </article>
+    </section>
+
+    <section class="container">
+      <aside class="vertical">
+        <img src="images/Rex Vance (thunder).png" alt="Luna Knight" />
+      </aside>
+      <article class="horizontal">
+        <h2>Rex Vance</h2>
+        <p class="font">
+          Known as "Thunder", is the energetic drummer of "Stage Frighters". With a natural talent for rhythm and an unstoppable passion, he earned his nickname for the powerful, wall-shaking beats he delivers. Rex brings electrifying energy to the stage with his dynamic drumming and showmanship, becoming the heartbeat of the band. Offstage, he's the glue that keeps the group motivated, reminding them to enjoy the ride. Together with Luna (Viper), Thunder drives *Stage Frighters* to inspire fans to embrace their individuality and make noise that matters.
+        </p>
+      </article>
+    </section>
+
+    <section class="container">
+      <aside class="vertical">
+        <img src="images/Scander Blackwood (Arc).png" alt="Luna Knight" />
+      </aside>
+      <article class="horizontal">
+        <h2>Scander Blackwood</h2>
+        <p class="font">
+          Known as "Arc", is the smooth and talented bassist of "Stage Frighters". With his calm demeanor and hypnotic basslines, he connects the band’s explosive sound like an electric arc. Known for his signature shades and purple bass, Arc provides the steady foundation for "Thunder's" wild drumming and "Viper's" sharp solos. Offstage, he's the chill mediator, keeping the group grounded. His motto: “Play it smooth, play it loud, and let the groove take over.”
+        </p>
+      </article>
+    </section>
+
+    <section class="container">
+      <aside class="vertical">
+        <img src="images/Sierra Blaze (rogue).png" alt="Luna Knight" />
+      </aside>
+      <article class="horizontal">
+        <h2>Sierra Blaze</h2>
+        <p class="font">
+          She grew up in a musical family but rebelled against tradition, falling in love with punk and rock. Known for her bold style and fiery attitude, she earned the nickname "Rogue" for breaking expectations. After captivating crowds at underground festivals with her raw talent and fearless stage presence, the Stage Frighters discovered her during a standout performance. Now, as their electrifying frontwoman, Sierra brings unmatched energy, charisma, and attitude to every show, embodying the rebellious spirit that defines both her and the band.
+        </p>
+      </article>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const containers = document.querySelectorAll(".container");
+
+        const observerOptions = {
+          threshold: 0.2, // Trigger when 20% of the element is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show"); // Add the .show class
+              observer.unobserve(entry.target); // Stop observing once the animation is triggered
+            }
+          });
+        }, observerOptions);
+
+        containers.forEach((container) => {
+          observer.observe(container); // Observe each .container
+        });
+      });
+    </script>
+
+    <script src="script.js"></script>
+    <script src="about.js"></script>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merch</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/logo.png">
+
+    <style>
+      .navbar {
+        border-bottom: 2px solid #8fefdc; /* Adds a solid 2px border at the bottom of the navbar */
+      }
+      body {
+        background-color: #333; /* Light grey background color */
+      }
+      /* Merch List Styling */
+      .merch-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .merch-item {
+        border-radius: 8px;
+        border-style: double;
+        border-width: 10px;
+        border-color: #8fefdc;
+        width: 250px;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        background-color: #444;
+        transition: transform 0.3s ease;
+        text-decoration: none;
+        opacity: 0;
+        transition: transform .2 ease;
+      }
+
+      .merch-item {
+          transition: transform 0.3s ease;
+      }
+      .merch-item:hover {
+          transform: scale(31);
+      }
+
+      .merch-item img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      .merch-item h3 {
+        font-size: 1.7rem;
+        color: #8fefdc;
+        margin: 10px 0;
+        font-family: "Lacquer", system-ui;
+      }
+
+      .merch-item p {
+        font-size: 1.1rem;
+        color: #eabce5;
+        margin: 10px 0;
+        font-family: "Fontdiner Swanky", serif;
+      }
+
+      @media (max-width: 600px) {
+        .merch-item {
+          width: 100%;
+        }
+      }
+
+      .merch-item:hover {
+        transform: scale(1.05);
+      }
+
+      .merch-item:hover h3 {
+        text-decoration: underline;
+      }
+
+      .merch-item img {
+        width: 100%; /* Keep it responsive to the item's width */
+        height: auto; /* Maintain the original aspect ratio of the image */
+        max-height: 200px; /* Optional: Limit the image height */
+        object-fit: contain; /* Ensures the whole image fits within the dimensions */
+        border-radius: 8px; /* Keep rounded corners */
+        margin-bottom: 10px;
+      }
+
+      .merch-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px double #000000;
+        border-radius: 8px;
+        background-color: #4e008c;
+      }
+
+      /* Fade-In Animation */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s ease-out forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s ease-out forwards; /* Prevent animation from resetting */
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Stage Fright Logo" />
+      </a>
+      <!-- Animated Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("mobile");
+      }
+    </script>
+
+    <div class="merch-list">
+      <a href="merch-item.html?id=1" class="merch-item">
+        <img src="images/merch/merch1.png" alt="Stage Frighters Tote Bag" />
+        <h3>Stage Frighters Tote Bag</h3>
+        <p>$15.00</p>
+      </a>
+      <a href="merch-item.html?id=2" class="merch-item">
+        <img src="images/merch/merch2.png" alt="Stage Frighters Cap" />
+        <h3>Stage Frighters Cap</h3>
+        <p>$12.00</p>
+      </a>
+      <a href="merch-item.html?id=3" class="merch-item">
+        <img src="images/merch/merch3.png" alt="Stage Frighters Keychain" />
+        <h3>Stage Frighters Keychain</h3>
+        <p>$5.00</p>
+      </a>
+      <a href="merch-item.html?id=4" class="merch-item">
+        <img src="images/merch/merch4.png" alt="Stage Frighters Luggage Tag" />
+        <h3>Stage Frighters Luggage Tag</h3>
+        <p>$8.00</p>
+      </a>
+      <a href="merch-item.html?id=5" class="merch-item">
+        <img src="images/merch/merch5.png" alt="Stage Frighters Water Bottle" />
+        <h3>Stage Frighters Water Bottle</h3>
+        <p>$18.00</p>
+      </a>
+      <a href="merch-item.html?id=6" class="merch-item">
+        <img src="images/merch/merch6.png" alt="Stage Frighters T-Shirt" />
+        <h3>Stage Frighters T-Shirt</h3>
+        <p>$20.00</p>
+      </a>
+      <a href="merch-item.html?id=7" class="merch-item">
+        <img src="images/merch/merch7.png" alt="Stage Frighters Phone Case" />
+        <h3>Stage Frighters Phone Case</h3>
+        <p>$15.00</p>
+      </a>
+      <a href="merch-item.html?id=8" class="merch-item">
+        <img src="images/merch/merch8.png" alt="Stage Frighters Pen" />
+        <h3>Stage Frighters Pen</h3>
+        <p>$3.00</p>
+      </a>
+      <a href="merch-item.html?id=9" class="merch-item">
+        <img src="images/merch/merch9.png" alt="Stage Frighters Mug" />
+        <h3>Stage Frighters Mug</h3>
+        <p>$12.00</p>
+      </a>
+      <a href="merch-item.html?id=10" class="merch-item">
+        <img src="images/merch/merch10.png" alt="Stage Frighters Hoodie" />
+        <h3>Stage Frighters Hoodie</h3>
+        <p>$30.00</p>
+      </a>
+      <a href="merch-item.html?id=11" class="merch-item">
+        <img src="images/merch/merch11.png" alt="Stage Frighters Fanny Pack" />
+        <h3>Stage Frighters Fanny Pack</h3>
+        <p>$25.00</p>
+      </a>
+      <a href="merch-item.html?id=12" class="merch-item">
+        <img src="images/merch/merch12.png" alt="Stage Frighters Notebook" />
+        <h3>Stage Frighters Notebook</h3>
+        <p>$10.00</p>
+      </a>
+      <a href="merch-item.html?id=13" class="merch-item">
+        <img src="images/merch/merch13.png" alt="Stage Frighters Poster" />
+        <h3>Stage Frighters Poster</h3>
+        <p>$10.00</p>
+      </a>
+      <a href="merch-item.html?id=14" class="merch-item">
+        <img src="images/merch/merch14.png" alt="Stage Frighters Flag" />
+        <h3>Stage Frighters Flag</h3>
+        <p>$15.00</p>
+      </a>
+      <a href="merch-item.html?id=15" class="merch-item">
+        <img src="images/merch/merch15.png" alt="Stage Frighters Button" />
+        <h3>Stage Frighters Button</h3>
+        <p>$2.00</p>
+      </a>
+      <a href="merch-item.html?id=16" class="merch-item">
+        <img src="images/merch/merch16.png" alt="Stage Frighters Fan" />
+        <h3>Stage Frighters Fan</h3>
+        <p>$7.00</p>
+      </a>
+      <a href="merch-item.html?id=17" class="merch-item">
+        <img src="images/merch/merch17.png" alt="Stage Frighters Wallet" />
+        <h3>Stage Frighters Wallet</h3>
+        <p>$20.00</p>
+      </a>
+      <a href="merch-item.html?id=18" class="merch-item">
+        <img src="images/merch/merch18.png" alt="Stage Frighters Calendar" />
+        <h3>Stage Frighters Calendar</h3>
+        <p>$15.00</p>
+      </a>
+      <a href="merch-item.html?id=19" class="merch-item">
+        <img src="images/merch/merch19.png" alt="Stage Frighters Headband" />
+        <h3>Stage Frighters Headband</h3>
+        <p>$5.00</p>
+      </a>
+      <a href="merch-item.html?id=20" class="merch-item">
+        <img src="images/merch/merch20.png" alt="Stage Frighters Socks" />
+        <h3>Stage Frighters Socks</h3>
+        <p>$10.00</p>
+      </a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const merchItems = document.querySelectorAll(".merch-item");
+        merchItems.forEach((item, index) => {
+          setTimeout(() => {
+            if (!item.classList.contains("fade-in")) { // Prevent reapplying the class
+              item.classList.add("fade-in");
+            }
+          }, index * 100); // Stagger animation by 100ms
+        });
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

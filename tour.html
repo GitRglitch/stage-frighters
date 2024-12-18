@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Tour</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/logo.png">
+
+    <style>
+      
+      /* Event List Styling */
+      .event-list {
+        width: calc(100% - 30px);
+        margin: 0 auto;
+      }
+
+      .event {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #444;
+        padding: 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: thick double #8fefdc;
+        font-family: "Lacquer", system-ui;
+        transition: transform 0.3s ease;
+      }
+
+      .event:hover {
+        transform: scale(1.02);
+      }
+
+      .date {
+        font-weight: bold;
+        text-transform: uppercase;
+        flex: 1;
+      }
+
+      .details {
+        flex: 2;
+        margin-left: 20px;
+      }
+
+      .details .title {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .details .location {
+        margin-top: 5px;
+        font-size: 0.9em;
+        color: #e0f7ff;
+      }
+
+      .details .note {
+        margin-top: 5px;
+        font-size: 0.8em;
+        color: #ffcccb;
+      }
+
+      .ticket-button {
+        background-color: #333;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s, color 0.3s;
+        font-family: "Lacquer", system-ui;
+      }
+
+      .ticket-button:hover {
+        background-color: #555;
+        color: #ffff00;
+      }
+      
+    </style>
+    
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Stage Fright Logo" />
+      </a>
+      <!-- Animated Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("mobile");
+      }
+    </script>
+
+    <div class="event-list">
+      <div class="event">
+        <div class="date">FEBRUARY 4, 2025</div>
+        <div class="details">
+          <div class="title">Shadow Spotlight</div>
+          <div class="location">Texas, Houston</div>
+        </div>
+        <button
+          class="ticket-button"
+          onclick="location.href = 'tour-item.html?id=1'"
+        >
+          TICKETS
+        </button>
+      </div>
+
+      <div class="event">
+        <div class="date">MARCH 12, 2025</div>
+        <div class="details">
+          <div class="title">Mic Drop Phobia</div>
+          <div class="location">California, Los Angeles</div>
+        </div>
+        <button
+          class="ticket-button"
+          onclick="location.href = 'tour-item.html?id=2'"
+        >
+          TICKETS
+        </button>
+      </div>
+
+      <div class="event">
+        <div class="date">APRIL 24, 2025</div>
+        <div class="details">
+          <div class="title">Fearless In The Limelight</div>
+          <div class="location">Florida, Orlando</div>
+        </div>
+        <button
+          class="ticket-button"
+          onclick="location.href = 'tour-item.html?id=3'"
+        >
+          TICKETS
+        </button>
+      </div>
+
+      <div class="event">
+        <div class="date">MAY 6, 2025</div>
+        <div class="details">
+          <div class="title">Electric Pulse</div>
+          <div class="location">Illinois, Chicago</div>
+        </div>
+        <button
+          class="ticket-button"
+          onclick="location.href = 'tour-item.html?id=4'"
+          onclick="location.href = 'tour-item.html?id=1'"
+        >
+          TICKETS
+        </button>
+      </div>
+
+      <div class="event">
+        <div class="date">MAY 27, 2025</div>
+        <div class="details">
+          <div class="title">Strings Of Fate</div>
+          <div class="location">Colorado, Denver</div>
+        </div>
+        <button
+          class="ticket-button"
+          onclick="location.href = 'tour-item.html?id=5'"
+        >
+          TICKETS
+        </button>
+      </div>
+
+      <div class="event">
+        <div class="date">JUNE 16, 2025</div>
+        <div class="details">
+          <div class="title">Break The Silence</div>
+          <div class="location">Washington, Seattle</div>
+        </div>
+        <button
+          class="ticket-button"
+          onclick="location.href = 'tour-item.html?id=6'"
+        >
+          TICKETS
+        </button>
+      </div>
+
+      <div class="event">
+        <div class="date">JULY 3, 2025</div>
+        <div class="details">
+          <div class="title">Fright Or Flight</div>
+          <div class="location">New York, New York City</div>
+        </div>
+        <button
+          class="ticket-button"
+          onclick="location.href = 'tour-item.html?id=7'"
+        >
+          TICKETS
+        </button>
+      </div>
+
+      <div class="event">
+        <div class="date">JULY 22, 2025</div>
+        <div class="details">
+          <div class="title">Amplified Chaos</div>
+          <div class="location">Ohio, Columbus</div>
+        </div>
+        <button
+          class="ticket-button"
+          onclick="location.href = 'tour-item.html?id=8'"
+        >
+          TICKETS
+        </button>
+      </div>
+
+      <div class="event">
+        <div class="date">AUGUST 15, 2025</div>
+        <div class="details">
+          <div class="title">Trmbling Chords</div>
+          <div class="location">Louisiana, New Orleans</div>
+        </div>
+        <button
+          class="ticket-button"
+          onclick="location.href = 'tour-item.html?id=9'"
+        >
+          TICKETS
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

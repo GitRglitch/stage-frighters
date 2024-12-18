@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Tour</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="icon" href="images/logo.png">
+  <style>
+    .tour-container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px double #000000;
+      border-radius: 8px;
+      background-color: #222;
+    }
+    .item-img {
+      width: 100%;
+      max-width: 300px;
+    }
+  </style>
+</head>
+
+<body class="individual-body">
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Stage Fright Logo" />
+    </a>
+    <!-- Animated Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tour.html">Tour</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="credits.html">Credits</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.classList.toggle("mobile");
+    }
+  </script>
+
+  <div class="tour-container">
+    <h1 id="item-name">Loading...</h1>
+    <h3 id="item-date">Loading...</h3>
+    <p id="item-price">Loading...</p>
+    <p id="item-description">Loading...</p>
+    <p id="item-extra">Loading...</p>
+
+
+    <section>
+      <h2 style="text-align: center">Order Item</h2>
+      <p style="text-align: center">
+        PLease enter your details do that you can buy this product.
+      </p>
+
+      <!-- Form Section -->
+      <form
+        id="dataForm"
+        action="#"
+        method="post"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 20px auto;
+          padding: 20px;
+          background-color: #444;
+          border-radius: 8px;
+          max-width: 500px;
+          width: 100%;
+          box-sizing: border-box;
+          border: 3px solid #8fefdc;
+        "
+      >
+        <div>
+          <label
+            for="name"
+            style="font-family: 'Lacquer', system-ui; color: white"
+            >Name:</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+            style="
+              width: 100%;
+              padding: 10px;
+              margin: 10px 0;
+              border: 1px solid #fff;
+              border-radius: 4px;
+              font-family: 'Lacquer', system-ui;
+              font-size: 16px;
+              box-sizing: border-box;
+            "
+          />
+        </div>
+
+        <div style="width: 100%; margin-bottom: 15px">
+          <label
+            for="email"
+            style="font-family: 'Lacquer', system-ui; color: white"
+            >Adress:</label
+          >
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Your Address"
+            required
+            style="
+              width: 100%;
+              padding: 10px;
+              margin: 10px 0;
+              border: 1px solid #fff;
+              border-radius: 4px;
+              font-family: 'Lacquer', system-ui;
+              font-size: 16px;
+              box-sizing: border-box;
+            "
+          />
+        </div>
+
+        <div style="width: 100%; margin-bottom: 15px">
+          <label
+            for="email"
+            style="font-family: 'Lacquer', system-ui; color: white"
+            >Credit Card Number:</label
+          >
+          <input
+            type="number"
+            id="creditcardnumber"
+            name="address"
+            placeholder="Your Credit Card Number"
+            required
+            style="
+              width: 100%;
+              padding: 10px;
+              margin: 10px 0;
+              border: 1px solid #fff;
+              border-radius: 4px;
+              font-family: 'Lacquer', system-ui;
+              font-size: 16px;
+              box-sizing: border-box;
+            "
+          />
+        </div>
+
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+          "
+        >
+          <button type="submit" class="ticket-button">Order</button>
+        </div>
+      </form>
+    </section>
+
+    <button class="ticket-button" onclick="window.location.href='tour.html'">
+      Back to Tours
+    </button>
+  </div>
+
+  <script src="tour.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

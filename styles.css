@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Lacquer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Lacquer&family=Spicy+Rice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Fontdiner+Swanky&family=Lacquer&family=Spicy+Rice&display=swap");
+
+/* General Styling */
+body {
+  background: #333;
+  color: #d3d3d3;
+  margin: 0;
+  height: 100vh;
+}
+
+h1 {
+  color: #eabce5;
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2,
+h3 {
+  color: #9fe85b;
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  color: #8fefdc;
+  font-family: "Fontdiner Swanky", serif;
+  text-align: center;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 5px 20px;
+  height: 40px; /* Set a fixed height */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #8fefdc;
+}
+
+.navbar .logo img {
+  height: 40px; /* Explicit height */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Prevent stretching */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 100%;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+  font-family: "Lacquer", system-ui;
+  text-align: center; /* Center align the text */
+  display: flex;
+  align-items: center; /* Vertically center the text */
+  justify-content: center; /* Horizontally center the text */
+}
+
+.nav-links li a:hover {
+  background-color: #555;
+  color: #ffff00;
+  border-radius: 4px;
+}
+.nav-links.mobile {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #333;
+  width: 100%;
+  animation: slideDown 0.5s ease forwards;
+  z-index: 9999;
+}
+
+.nav-links.mobile.slideUp {
+  animation: slideUp 0.5s ease forwards;
+}
+
+.nav-links.mobile li {
+  padding: 8px 0;
+  border: 1px solid #444;
+}
+
+.nav-links.mobile li:last-child {
+  border-bottom: none;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+/* Open Hamburger Animation */
+.hamburger.open .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    top: 30px;
+  }
+  to {
+    opacity: 1;
+    top: 31px;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    top: 30px;
+  }
+  to {
+    opacity: 0;
+    top: 31px;
+  }
+}
+
+
+/* Buttons */
+button {
+  background-color: #9664e6;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+  color: #ffff00;
+}
+
+.ticket-button {
+  background-color: #333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Lacquer", system-ui;
+}
+
+.ticket-button:hover {
+  background-color: #555;
+  color: #ffff00;
+}
+
+.back-button {
+  margin-top: 20px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.back-button:hover {
+  background-color: #555;
+}
+.individual-body {
+  text-align: center;
+}
+
+

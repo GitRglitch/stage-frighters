@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Stage Frighters Tote Bag",
+        "price": 15.00,
+        "description": "Carry your essentials in style with the Stage Frighters Tote Bag. Made from durable materials, this tote bag features the iconic Stage Frighters logo and offers ample space for all your needs. Perfect for everyday use or special occasions."
+    },
+    {
+        "id": 2,
+        "name": "Stage Frighters Cap",
+        "price": 12.00,
+        "description": "Keep the sun out of your eyes and show your support with the Stage Frighters Cap. This stylish cap features the Stage Frighters emblem on the front and is adjustable to fit any size. Ideal for concerts, casual wear, or outdoor activities."
+    },
+    {
+        "id": 3,
+        "name": "Stage Frighters Keychain",
+        "price": 5.00,
+        "description": "Never lose your keys again with the Stage Frighters Keychain. This sturdy keychain features the Stage Frighters logo, making it a perfect accessory for fans. Attach it to your keys, backpack, or purse."
+    },
+    {
+        "id": 4,
+        "name": "Stage Frighters Luggage Tag",
+        "price": 8.00,
+        "description": "Travel in style with the Stage Frighters Luggage Tag. This durable tag features the Stage Frighters design and includes a clear window for your contact information. Easily identify your luggage on the go."
+    },
+    {
+        "id": 5,
+        "name": "Stage Frighters Water Bottle",
+        "price": 18.00,
+        "description": "Stay hydrated with the Stage Frighters Water Bottle. This high-quality bottle features the Stage Frighters logo and is designed to keep your drinks cold or hot for hours. Perfect for workouts, travel, or daily use."
+    },
+    {
+        "id": 6,
+        "name": "Stage Frighters T-Shirt",
+        "price": 20.00,
+        "description": "Show your support with the Stage Frighters T-Shirt. Made from soft, comfortable fabric, this t-shirt features a vibrant Stage Frighters print and is available in various sizes. Ideal for concerts, casual outings, or lounging at home."
+    },
+    {
+        "id": 7,
+        "name": "Stage Frighters Phone Case",
+        "price": 15.00,
+        "description": "Protect your phone in style with the Stage Frighters Phone Case. This durable case features the Stage Frighters design and offers excellent protection against drops and scratches. Compatible with various phone models."
+    },
+    {
+        "id": 8,
+        "name": "Stage Frighters Pen",
+        "price": 3.00,
+        "description": "Write in style with the Stage Frighters Pen. This sleek pen features the Stage Frighters branding and provides smooth, reliable writing. Perfect for school, work, or personal use."
+    },
+    {
+        "id": 9,
+        "name": "Stage Frighters Mug",
+        "price": 12.00,
+        "description": "Enjoy your favorite beverage with the Stage Frighters Mug. This sturdy mug features the Stage Frighters logo and is microwave and dishwasher safe. Perfect for coffee, tea, or hot chocolate."
+    },
+    {
+        "id": 10,
+        "name": "Stage Frighters Hoodie",
+        "price": 30.00,
+        "description": "Stay warm and cozy with the Stage Frighters Hoodie. This comfortable hoodie features the Stage Frighters logo and is perfect for chilly days. Available in various sizes."
+    },
+    {
+        "id": 11,
+        "name": "Stage Frighters Fanny Pack",
+        "price": 25.00,
+        "description": "Keep your belongings secure with the Stage Frighters Fanny Pack. This stylish fanny pack features the Stage Frighters design and offers multiple compartments for storage. Ideal for concerts, festivals, or everyday use."
+    },
+    {
+        "id": 12,
+        "name": "Stage Frighters Notebook",
+        "price": 10.00,
+        "description": "Jot down your thoughts and ideas in the Stage Frighters Notebook. This notebook features a durable cover with the Stage Frighters logo and contains high-quality lined pages. Perfect for school, work, or personal journaling."
+    },
+    {
+        "id": 13,
+        "name": "Stage Frighters Poster",
+        "price": 10.00,
+        "description": "Decorate your space with the Stage Frighters Poster. This high-quality poster features stunning artwork of the Stage Frighters and is perfect for any fan's room."
+    },
+    {
+        "id": 14,
+        "name": "Stage Frighters Flag",
+        "price": 15.00,
+        "description": "Show your pride with the Stage Frighters Flag. This vibrant flag features the Stage Frighters logo and is perfect for hanging in your room, office, or at events."
+    },
+    {
+        "id": 15,
+        "name": "Stage Frighters Fan",
+        "price": 7.00,
+        "description": "Stay cool with the Stage Frighters Fan. This handy fan features the Stage Frighters design and is perfect for concerts, festivals, or hot days."
+    },
+    {
+        "id": 16,
+        "name": "Stage Frighters Wallet",
+        "price": 20.00,
+        "description": "Keep your money and cards organized with the Stage Frighters Wallet. This stylish wallet features the Stage Frighters logo and multiple compartments for storage."
+    },
+    {
+        "id": 17,
+        "name": "Stage Frighters Button",
+        "price": 2.00,
+        "description": "Show your support with the Stage Frighters Button. This collectible button features the Stage Frighters emblem and is perfect for jackets, backpacks, or lanyards."
+    },
+    {
+        "id": 18,
+        "name": "Stage Frighters Calendar",
+        "price": 15.00,
+        "description": "Keep track of important dates with the Stage Frighters Calendar. This calendar features stunning images of the Stage Frighters and is perfect for any fan."
+    },
+    {
+        "id": 19,
+        "name": "Stage Frighters Headband",
+        "price": 5.00,
+        "description": "Stay stylish and sweat-free with the Stage Frighters Headband. This comfortable headband features the Stage Frighters logo and is perfect for workouts, concerts, or everyday wear."
+    },
+    {
+        "id": 20,
+        "name": "Stage Frighters Socks",
+        "price": 10.00,
+        "description": "Keep your feet warm and cozy with the Stage Frighters Socks. These comfortable socks feature the Stage Frighters branding and are perfect for everyday wear or as a gift for fans."
+    }
+]

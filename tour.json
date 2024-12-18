@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "date": "FEBRUARY 4, 2025",
+    "name": "Shadow Spotlight",
+    "location": "Texas, Houston",
+    "description": "Join us for an unforgettable night of music and performance.",
+    "extra": "Special guest appearance by DJ Shadow.",
+    "price": 100
+  },
+  {
+    "id": 2,
+    "date": "MARCH 12, 2025",
+    "name": "Mic Drop Phobia",
+    "location": "California, Los Angeles",
+    "description": "Experience the fear and thrill of the mic drop.",
+    "extra": "Meet and greet with the artists post-show.",
+    "price": 140
+  },
+  {
+    "id": 3,
+    "date": "APRIL 24, 2025",
+    "name": "Fearless In The Limelight",
+    "location": "Florida, Orlando",
+    "description": "A bold performance that pushes boundaries.",
+    "extra": "Backstage access passes available.",
+    "price": 120
+  },
+  {
+    "id": 4,
+    "date": "MAY 6, 2025",
+    "name": "Electric Pulse",
+    "location": "Illinois, Chicago",
+    "description": "Feel the energy with every beat.",
+    "extra": "Exclusive merchandise for attendees.",
+    "price": 150
+  },
+  {
+    "id": 5,
+    "date": "MAY 27, 2025",
+    "name": "Strings Of Fate",
+    "location": "Colorado, Denver",
+    "description": "A night of melodic strings and harmonious tunes.",
+    "extra": "Chance to win a signed guitar.",
+    "price": 110
+  },
+  {
+    "id": 6,
+    "date": "JUNE 16, 2025",
+    "name": "Break The Silence",
+    "location": "Washington, Seattle",
+    "description": "A powerful performance that will leave you speechless.",
+    "extra": "Silent auction for charity.",
+    "price": 90
+  },
+  {
+    "id": 7,
+    "date": "JULY 3, 2025",
+    "name": "Fright Or Flight",
+    "location": "New York, New York City",
+    "description": "An adrenaline-pumping show you can't miss.",
+    "extra": "VIP lounge access for early birds.",
+    "price": 160
+  },
+  {
+    "id": 8,
+    "date": "JULY 22, 2025",
+    "name": "Amplified Chaos",
+    "location": "Ohio, Columbus",
+    "description": "Embrace the chaos and let the music take over.",
+    "extra": "Afterparty with the band.",
+    "price": 100
+  },
+  {
+    "id": 9,
+    "date": "AUGUST 15, 2025",
+    "name": "Trembling Chords",
+    "location": "Louisiana, New Orleans",
+    "description": "A soulful performance in the heart of jazz country.",
+    "extra": "Free jazz workshop for ticket holders.",
+    "price": 100
+  }
+]
